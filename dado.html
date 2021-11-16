@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="cssboton.css" />
+
+    <title>Prueba dado</title>
+</head>
+<body>
+    <script>
+        var numero = prompt("Introduzca el numero de dados que desee", "");
+        var cont = Number(0);
+            while (cont < numero) {
+                var dado = (Math.random() * 6) + 1;
+                var cara = Math.floor(dado);
+                document.write("<img src="+cara+".png width=15% height=15%>" + " ");
+                cont++;
+            }
+    </script>
+</body>
+</html>
